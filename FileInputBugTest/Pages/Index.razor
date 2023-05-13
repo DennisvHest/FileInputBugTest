@@ -1,0 +1,14 @@
+﻿@page "/"
+
+<input type="file" />
+<b>Counter: @counter</b>
+<button @onclick="IncrementCount">count</button>
+
+@code {
+    int counter = 0;
+
+    void IncrementCount()
+    {
+        counter++;
+    }
+}
